@@ -3,19 +3,19 @@
     {
       "source": "/embed",
       "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' http://localhost:3000 "
-        }
+        { "key": "Content-Security-Policy", "value": "frame-ancestors 'self' http://localhost:3000" }
       ]
     },
     {
       "source": "/embed.html",
       "headers": [
-        {
-          "key": "Content-Security-Policy",
-          "value": "frame-ancestors 'self' http://localhost:3000"
-        }
+        { "key": "Content-Security-Policy", "value": "frame-ancestors 'self' http://localhost:3000" }
+      ]
+    },
+    {
+      "source": "/embed/(.*)",
+      "headers": [
+        { "key": "Content-Security-Policy", "value": "frame-ancestors 'self' http://localhost:3000" }
       ]
     },
     {
