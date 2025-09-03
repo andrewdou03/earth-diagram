@@ -2,10 +2,10 @@
 import React, { Suspense, useMemo, useRef, useEffect } from "react";
 import * as THREE from "three";
 import { Canvas, useFrame, useThree } from "@react-three/fiber";
-import { OrbitControls, PerspectiveCamera, Icosahedron, useTexture } from "@react-three/drei";
+import { OrbitControls,  Icosahedron, useTexture } from "@react-three/drei";
 import { Leva, useControls } from "leva";
 
-import LoadingOverlay from "./components/LoadingOverlay";
+import LoadingOverlay from "./components/loadingOverlay";
 
 import earthVertexShader from "./shaders/earth/vertex.glsl";
 import earthFragmentShader from "./shaders/earth/fragment.glsl";
@@ -13,7 +13,6 @@ import atmosphereVertexShader from "./shaders/atmosphere/vertex.glsl";
 import atmosphereFragmentShader from "./shaders/atmosphere/fragment.glsl";
 
 import WonderLabel from "./components/wonderLabel";
-import latLongToVec3 from "./utils/latLongToVec";
 
 // Wonders
 const WONDERS = [
